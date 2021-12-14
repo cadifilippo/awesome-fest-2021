@@ -6,6 +6,8 @@ Proyecto para el Awesome Fest 2021 de GetOnBrd
 
 Basados en los juegos de Pokemon para Game Boy Advance, creamos Gotta catch 'em a Job! donde el ~~Profesor Oak~~ [Midudev](https://midu.dev/) nos ayuda a encontrar un trabajo como desarrollador frontend en las 3 tecnologías mas utilizadas del momento.
 
+Los trabajos que se muestran al final son con un máximo de 3 y la busqueda se hace respetando el framework seleccionado, igualmente pueden aparecer trabajos en otras tecnologías (ej: Python, Ruby, etc), el buscador es igual que el de la web GetOnBrd, si se lee la descripción del trabajo nuestro famework debería aparecer en los requisitos.
+
 ## Modo de Uso
 
 Para utilizar la aplicación en forma local debe clonar el proyecto `git clone https://github.com/cadifilippo/awesome-fest-2021.git`, posicionarse en la carpeta del proyecto `cd awesome-fest-2021` y ejecutar el comando `npm install` o `yarn` para instalar las dependencias. Luego puede ejecutar el comando `npm start` o `yarn start` para iniciar la aplicación.
@@ -33,4 +35,4 @@ Para finalizar le mostraremos 3 empleos para que pueda postular, pero también d
 
 ## Video
 
-[]()
+[Mira en Youtube](https://youtu.be/hzCzyJuoIac)
