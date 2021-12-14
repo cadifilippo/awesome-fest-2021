@@ -1,0 +1,39 @@
+.oak {
+  left: -50px;
+  position: relative;
+  top: 70px;
+  width: 400px;
+}
+
+.content {
+  display: flex;
+}
+.left {
+  width: 300px;
+}
+.right {
+  flex: 1;
+  font-size: 20px;
+  line-height: 20px;
+}
+
+.button {
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  height: 60px;
+  justify-content: center;
+  left: 300px;
+  padding: 0;
+  position: relative;
+  top: -70px;
+  width: 60px;
+}
+
+.icon {
+  height: 60px;
+  width: 60px;
+  color: red;
+}

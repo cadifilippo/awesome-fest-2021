@@ -1,24 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import Layout from './layout/Layout';
+import StepWizard from 'react-step-wizard';
+import Step1 from './steps/Step1';
+import Step2 from './steps/Step2/Step2';
+import Step3 from './steps/Step3';
+import Step4 from './steps/Step4';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Layout>
+      <StepWizard>
+        <Step1 />
+        <Step2 />
+        <Step3 />
+        <Step4 />
+      </StepWizard>
+    </Layout>
   );
 }
 

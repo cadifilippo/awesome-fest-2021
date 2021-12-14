@@ -1,0 +1,91 @@
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 500px;
+  background-image: url('../../assets/background-selected.png');
+}
+
+.top {
+  min-height: 300px;
+}
+
+.message {
+  width: 500px;
+  border: 8px solid sandybrown;
+  border-radius: 12px;
+  padding: 5px;
+  background-color: var(--white);
+  margin-top: 50px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.selected {
+  height: 80px;
+  margin: 15px 0px 0 5px;
+}
+.titles {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0 5px;
+  line-height: 20px;
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-top: 40px;
+}
+
+.button {
+  width: 70px;
+  margin: 2px;
+  padding: 2px;
+  background-color: transparent;
+  border: 1px solid var(--primary);
+  font-size: 20px;
+}
+
+.bottom {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  width: 400px;
+  margin-right: 100px;
+}
+
+.choice {
+  display: flex;
+}
+
+.pokemon {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background-color: transparent;
+}
+
+.pokeball {
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 120px;
+  align-self: center;
+}
+.pokeball:hover {
+  filter: opacity(0.5);
+}
+
+.language {
+  top: 20px;
+  left: 20px;
+  position: absolute;
+  height: 80px;
+  align-self: center;
+}
