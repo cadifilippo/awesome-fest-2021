@@ -1,0 +1,35 @@
+{
+  "files": {
+    "main.css": "./static/css/main.4411db51.chunk.css",
+    "main.js": "./static/js/main.b44d99ae.chunk.js",
+    "main.js.map": "./static/js/main.b44d99ae.chunk.js.map",
+    "runtime-main.js": "./static/js/runtime-main.1e9d3a07.js",
+    "runtime-main.js.map": "./static/js/runtime-main.1e9d3a07.js.map",
+    "static/js/2.7543a5e5.chunk.js": "./static/js/2.7543a5e5.chunk.js",
+    "static/js/2.7543a5e5.chunk.js.map": "./static/js/2.7543a5e5.chunk.js.map",
+    "index.html": "./index.html",
+    "static/css/main.4411db51.chunk.css.map": "./static/css/main.4411db51.chunk.css.map",
+    "static/js/2.7543a5e5.chunk.js.LICENSE.txt": "./static/js/2.7543a5e5.chunk.js.LICENSE.txt",
+    "static/media/Step3.module.css": "./static/media/background-selected.55c20d4c.png",
+    "static/media/char.7dc9f917.gif": "./static/media/char.7dc9f917.gif",
+    "static/media/Step5.module.css": "./static/media/final.a97a137c.jpeg",
+    "static/media/medalla-01-roca.c9221069.png": "./static/media/medalla-01-roca.c9221069.png",
+    "static/media/medalla-02-cascada.65bab26c.png": "./static/media/medalla-02-cascada.65bab26c.png",
+    "static/media/medalla-03-trueno.72bfb235.png": "./static/media/medalla-03-trueno.72bfb235.png",
+    "static/media/medalla-04-arcoiris.a6cd56f8.png": "./static/media/medalla-04-arcoiris.a6cd56f8.png",
+    "static/media/medalla-05-pantano.31beb593.png": "./static/media/medalla-05-pantano.31beb593.png",
+    "static/media/medalla-06-alma.1c0eac2e.png": "./static/media/medalla-06-alma.1c0eac2e.png",
+    "static/media/medalla-07-volcan.67045033.png": "./static/media/medalla-07-volcan.67045033.png",
+    "static/media/medalla-08-tierra.7b4af6f5.png": "./static/media/medalla-08-tierra.7b4af6f5.png",
+    "static/media/oak.51ae3ea2.png": "./static/media/oak.51ae3ea2.png",
+    "static/media/pokeball.ed58ec53.png": "./static/media/pokeball.ed58ec53.png",
+    "static/media/react.a544fd8c.png": "./static/media/react.a544fd8c.png",
+    "static/media/runner.5f2d8d22.gif": "./static/media/runner.5f2d8d22.gif"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.1e9d3a07.js",
+    "static/js/2.7543a5e5.chunk.js",
+    "static/css/main.4411db51.chunk.css",
+    "static/js/main.b44d99ae.chunk.js"
+  ]
+}

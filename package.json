@@ -1,6 +1,7 @@
 {
   "name": "awesome-fest-2021",
   "version": "0.1.0",
+  "homepage": "./",
   "private": true,
   "author": {
     "name": "Carlos Difilippo",
@@ -21,7 +22,10 @@
     "@testing-library/user-event": "^12.1.10",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "react-icons": "^4.3.1",
     "react-scripts": "4.0.3",
+    "react-step-wizard": "^5.3.9",
+    "sweetalert2": "^11.3.0",
     "web-vitals": "^1.0.1"
   },
   "eslintConfig": {

@@ -1,0 +1,15 @@
+.container {
+  background-color: var(--black);
+  min-width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.main {
+  background-color: var(--grey);
+  width: 700px;
+  height: 500px;
+}
