@@ -47,7 +47,11 @@ const Step5 = ({ isActive }) => {
           jobs.map((job) => (
             <div key={job.attributes.title} className={styles.card}>
               <h2 className={styles.title}>{job.attributes.title}</h2>
-              <a href={job.links.public_url} className={styles.link}>
+              <a
+                href={job.links.public_url}
+                className={styles.link}
+                target="_blank"
+              >
                 VER OFERTA
               </a>
             </div>

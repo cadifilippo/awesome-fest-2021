@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { MdNextPlan } from 'react-icons/md';
+import { VscDebugStart } from 'react-icons/vsc';
 
 import oak from '../../assets/oak.png';
 
@@ -31,7 +31,7 @@ const Step1 = ({ nextStep }) => {
         <p>Bueno, cuéntame algo de ti.</p>
         <p>Primero dime como te llamas</p>
         <button className={styles.button} onClick={handleClick}>
-          <MdNextPlan className={styles.icon} />
+          <VscDebugStart className={styles.icon} />
         </button>
       </div>
     </div>

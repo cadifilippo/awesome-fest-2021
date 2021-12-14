@@ -1,6 +1,7 @@
 {
   "name": "awesome-fest-2021",
   "version": "0.1.0",
+  "homepage": "./",
   "private": true,
   "author": {
     "name": "Carlos Difilippo",
