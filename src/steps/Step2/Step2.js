@@ -5,8 +5,17 @@ import char from '../../assets/char.gif';
 
 import styles from './Step2.module.css';
 import Swal from 'sweetalert2';
+import { useEffect, useRef } from 'react';
 
-const Step2 = ({ nextStep, name, setName }) => {
+const Step2 = ({ isActive, nextStep, name, setName }) => {
+  const text = useRef(null);
+
+  useEffect(() => {
+    if (isActive) {
+      text.current.focus();
+    }
+  }, [isActive]);
+
   const handleClick = () => {
     if (name.length > 3) {
       nextStep();
@@ -19,6 +28,16 @@ const Step2 = ({ nextStep, name, setName }) => {
     }
   };
 
+  const handleChange = ({ target }) => {
+    setName(target.value);
+  };
+
+  const handlePress = ({ code }) => {
+    if (code === 'Enter') {
+      handleClick();
+    }
+  };
+
   return (
     <div className={styles.content}>
       <div className={styles.top}>
@@ -27,12 +46,12 @@ const Step2 = ({ nextStep, name, setName }) => {
           <h3>¿CÓMO TE LLAMAS?</h3>
           <input
             type="text"
+            ref={text}
             className={styles.input}
             placeholder="Name"
             value={name}
-            onChange={(e) => {
-              setName(e.target.value);
-            }}
+            onChange={handleChange}
+            onKeyUp={handlePress}
           />
         </div>
       </div>
@@ -46,6 +65,7 @@ const Step2 = ({ nextStep, name, setName }) => {
 };
 
 Step2.propTypes = {
+  isActive: PropTypes.bool,
   nextStep: PropTypes.func,
   name: PropTypes.string,
   setName: PropTypes.func,
