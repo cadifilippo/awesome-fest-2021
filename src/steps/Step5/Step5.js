@@ -4,12 +4,14 @@ import { BiSearchAlt } from 'react-icons/bi';
 import runner from '../../assets/runner.gif';
 import styles from './Step5.module.css';
 
-const Step5 = ({ isActive }) => {
+const Step5 = ({ isActive, english, seniority }) => {
   const [jobs, setJobs] = useState([]);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     if (isActive) {
       try {
+        setLoading(true);
         fetch(
           'https://www.getonbrd.com/api/v0/search/jobs?query=vue&per_page=100&page=1'
         )
@@ -19,22 +21,28 @@ const Step5 = ({ isActive }) => {
               .filter(
                 (job) => job?.attributes?.category_name === 'Programación'
               )
-              .filter((job) => job?.attributes?.seniority?.data?.id === 3)
+              .filter(
+                (job) => job?.attributes?.seniority?.data?.id === seniority
+              )
               .filter(
                 (job) =>
-                  !job?.attributes?.desirable
+                  english ||
+                  (!job?.attributes?.desirable
                     ?.toLowerCase()
                     .includes('ingles') &&
-                  !job?.attributes?.desirable?.toLowerCase().includes('inglés')
+                    !job?.attributes?.desirable
+                      ?.toLowerCase()
+                      .includes('inglés'))
               )
               .splice(0, 3);
             setJobs(final);
+            setLoading(false);
           });
       } catch (error) {
         console.error(error);
       }
     }
-  }, [isActive]);
+  }, [isActive, english, seniority]);
 
   const handleLink = () => {
     window.open(`https://www.getonbrd.com/empleos-${'react'}`, '_blank');
@@ -43,17 +51,27 @@ const Step5 = ({ isActive }) => {
   return (
     <div className={styles.content}>
       <div className={styles.top}>
-        {jobs.length > 0 &&
-          jobs.map((job) => (
-            <div key={job.attributes.title} className={styles.card}>
-              <h2 className={styles.title}>{job.attributes.title}</h2>
-              <a
-                href={job.links.public_url}
-                className={styles.link}
-                target="_blank"
-              >
-                VER OFERTA
-              </a>
+        {!loading &&
+          (jobs.length > 0 ? (
+            jobs.map((job) => (
+              <div key={job.attributes.title} className={styles.card}>
+                <h2 className={styles.title}>{job.attributes.title}</h2>
+                <a
+                  href={job.links.public_url}
+                  className={styles.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  VER OFERTA
+                </a>
+              </div>
+            ))
+          ) : (
+            <div className={styles.card}>
+              <h2 className={styles.title}>
+                🙏 Disculpanos, no tenemos puestos para ti.🥲
+              </h2>
+              <p className={styles.link}>VUELVE PRONTO</p>
             </div>
           ))}
       </div>
@@ -69,6 +87,8 @@ const Step5 = ({ isActive }) => {
 
 Step5.propTypes = {
   isActive: PropTypes.bool,
+  english: PropTypes.bool,
+  seniority: PropTypes.number,
 };
 
 export default Step5;

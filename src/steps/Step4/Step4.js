@@ -1,5 +1,4 @@
 import PropTypes from 'prop-types';
-import React, { useState } from 'react';
 import { VscDebugStart } from 'react-icons/vsc';
 import Switch from '../../components/Switch';
 import styles from './Step4.module.css';
@@ -13,10 +12,16 @@ import medalla6 from '../../assets/medalla-06-alma.png';
 import medalla7 from '../../assets/medalla-07-volcan.png';
 import medalla8 from '../../assets/medalla-08-tierra.png';
 
-const Step4 = ({ language, nextStep }) => {
-  const [exp, setExp] = useState(0);
-  const [english, setEnglish] = useState(false);
-  const [back, setBack] = useState(false);
+const Step4 = ({
+  language,
+  nextStep,
+  exp,
+  setExp,
+  english,
+  setEnglish,
+  back,
+  setBack,
+}) => {
   const handleClick = () => {
     nextStep();
   };
@@ -72,7 +77,7 @@ const Step4 = ({ language, nextStep }) => {
               step={1}
               list="tickmarks"
               value={exp}
-              onChange={(e) => setExp(e.target.value)}
+              onChange={(e) => setExp(parseInt(e.target.value))}
             />
           </div>
         </label>
@@ -108,6 +113,13 @@ const Step4 = ({ language, nextStep }) => {
 
 Step4.propTypes = {
   nextStep: PropTypes.func,
+  language: PropTypes.string,
+  exp: PropTypes.number,
+  setExp: PropTypes.func,
+  english: PropTypes.bool,
+  setEnglish: PropTypes.func,
+  back: PropTypes.bool,
+  setBack: PropTypes.func,
 };
 
 export default Step4;

@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import PropTypes from 'prop-types';
 import { VscDebugStart } from 'react-icons/vsc';
 
@@ -7,9 +6,7 @@ import char from '../../assets/char.gif';
 import styles from './Step2.module.css';
 import Swal from 'sweetalert2';
 
-const Step2 = ({ nextStep }) => {
-  const [name, setName] = useState('');
-
+const Step2 = ({ nextStep, name, setName }) => {
   const handleClick = () => {
     if (name.length > 3) {
       nextStep();
@@ -50,6 +47,8 @@ const Step2 = ({ nextStep }) => {
 
 Step2.propTypes = {
   nextStep: PropTypes.func,
+  name: PropTypes.string,
+  setName: PropTypes.func,
 };
 
 export default Step2;
