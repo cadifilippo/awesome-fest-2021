@@ -26,10 +26,10 @@ Para finalizar le mostraremos 3 empleos para que pueda postular, pero también d
 
 ## ScreenShots
 
-<img src="./screenshots/sshot1.jpeg" width="250" >
-<img src="./screenshots/sshot2.jpeg" width="250" >
-<img src="./screenshots/sshot3.jpeg" width="250" >
-<img src="./screenshots/sshot4.jpeg" width="250" >
+<img src="./screenshots/sshot1.jpeg" width="40%" >
+<img src="./screenshots/sshot2.jpeg" width="40%" >
+<img src="./screenshots/sshot3.jpeg" width="40%" >
+<img src="./screenshots/sshot4.jpeg" width="40%" >
 
 ## Video
 
