@@ -1,14 +1,11 @@
 import PropTypes from 'prop-types';
-import { useState } from 'react';
 import angular from '../../assets/angular.png';
 import pokeball from '../../assets/pokeball.png';
 import react from '../../assets/react.png';
 import vue from '../../assets/vue.png';
 import styles from './Step3.module.css';
 
-const Step3 = ({ nextStep }) => {
-  const [language, setLanguage] = useState('');
-
+const Step3 = ({ nextStep, language, setLanguage }) => {
   const handleClick = (lang) => {
     setLanguage(lang);
   };

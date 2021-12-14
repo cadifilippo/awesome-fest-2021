@@ -36,8 +36,9 @@
   text-decoration: none;
   color: var(--black);
   position: relative;
-  left: 400px;
+  left: 0px;
   top: -5px;
+  text-align: right;
 }
 .link:visited,
 .link:hover {
